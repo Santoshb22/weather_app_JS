@@ -9,6 +9,8 @@ const country = document.querySelector(".city p")
 const humidityIs = document.querySelector("#humidity-js")
 const windSpeed = document.querySelector("#wind-speed")
 const weatherImg = document.querySelector(".weather-details img")
+const weatherDisplay = document.querySelector(".weather-details")
+
 
 const showData = async (city) => {
 
@@ -38,6 +40,8 @@ if (data.current.condition.text === "Mist") {
 } else if(data.current.condition.text === "Snow") {
     weatherImg.src = "./img/snow.png"
 }
+
+weatherDisplay.style.display = "block"
 
 console.log(data)
 }

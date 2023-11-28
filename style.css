@@ -17,6 +17,10 @@ body {
     border-radius: 8px;
 }
 
+.weather-details {
+    display: none;
+}
+
 .input-search {
     justify-content: space-between;
 }
